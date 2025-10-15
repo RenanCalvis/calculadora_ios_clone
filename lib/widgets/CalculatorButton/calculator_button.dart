@@ -9,7 +9,7 @@ class CalculatorButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(backgroundColor: color, shape: CircleBorder(), padding: EdgeInsets.zero, fixedSize: Size(80, 80)),
+      style: ElevatedButton.styleFrom(backgroundColor: color, shape: CircleBorder(), padding: EdgeInsets.zero, fixedSize: Size(82, 82)),
       onPressed: onPressed,
       child: Text(text, style: TextStyle(color: Colors.white, fontSize: 36)),
     );

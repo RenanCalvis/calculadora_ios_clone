@@ -20,10 +20,13 @@ class CalculatorPage extends StatelessWidget {
           Container(
             alignment: Alignment.centerRight,
             // width: double.infinity,
-            color: Colors.red,
+            // color: Colors.red,
             padding: EdgeInsets.zero,
             margin: EdgeInsets.zero,
-            child: Obx(() => Text(controller.displayValue.toString(), style: TextStyle(color: Colors.white, fontSize: 68, height: 1))),
+            child: Obx(() => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Text(controller.displayValue.toString(), style: TextStyle(color: Colors.white, fontSize: 68, height: 1)),
+            )),
           ),
           SizedBox(
             height: 450,
@@ -31,7 +34,7 @@ class CalculatorPage extends StatelessWidget {
             // width: double.infinity,
             // height: 88,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: controller.buttons.map((row) {
